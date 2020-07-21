@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Frontend-разработчик и веб верстальщик</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="msapplication-TileImage" content="./img/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top container">
+      <button class="header__toggle header__toggle--x" id="header__toggle" type="button">
+        <span aria-label="Открыть меню"></span>
+      </button>
+      <nav class="header__menu menu menu--js">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#part__title">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sample__title">Портфолио</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#ability__title">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__wrapper">
+        <a class="header__tel" href="tel:+74999957755">+7 (499) 995-55-77</a>
+        <button class="header__order btn-call btn-call--icon open-js" id="header__order" type="button">
+          <i class="btn-call__icon icon icon--phone" aria-label="Заказать звонок"></i><span>Заказать звонок</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="summary">
+      <div class="summary__elements elements elements--js" aria-hidden="true">
+        <span class="elements__item elements__item--grid"> # </span>
+        <span class="elements__item elements__item--brace"> { } </span>
+        <span class="elements__item elements__item--brace-copy"> { } </span>
+        <span class="elements__item elements__item--div"> &lt;div&gt; </span>
+        <span class="elements__item elements__item--div-copy">
+          &lt;div&gt;
+        </span>
+        <span class="elements__item elements__item--slash"> &lt;/&gt; </span>
+        <span class="elements__item elements__item--slash-copy">
+          &lt;/&gt;
+        </span>
+      </div>
+      <div class="summary__wrapper container">
+        <picture class="summary__photo">
+          <source srcset="./img/men.webp" type="image/webp" />
+          <img src="./img/men.png" alt="Дмитрий Алексеев" />
+        </picture>
+        <div class="summary__content">
+          <h1 class="summary__title">Дмитрий Алексеев</h1>
+          <p class="summary__txt">
+            Frontend-разработчик и&nbsp;веб&#8209;верстальщик
+          </p>
+          <button class="summary__btn btn-active open-js" id="summary__btn" type="button" data-modal="#modal">
+            Узнать больше
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="part container">
+      <h2 class="h-2" id="part__title">Что я делаю</h2>
+      <ul class="part__list">
+        <li class="part__item part__item--page-proofs">
+          Вёрстка лендинг-страниц и&nbsp;сайтов любой сложности
+        </li>
+        <li class="part__item part__item--adaptive">
+          Адаптивная вёрстка под все браузеры и&nbsp;устройства
+        </li>
+        <li class="part__item part__item--frontend">
+          Frontend&mdash;разработка и&nbsp;программирование
+        </li>
+        <li class="part__item part__item--correction">
+          Исправление и&nbsp;доработка существующей вёрстки
+        </li>
+      </ul>
+      <button class="part__btn btn-active open-js" id="part__btn" aria-label="button" type="button">
+        Узнать стоимость
+      </button>
+    </section>
+    <section class="sample">
+      <div class="container">
+        <h2 class="h-2" id="sample__title">Примеры моих работ</h2>
+        <div class="sample__wrapper">
+          <div class="sample__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <figure class="slider__figure">
+                  <picture class="slider__picture">
+                    <source class="slider__image" srcset="./img/01.webp" type="image/png" />
+                    <img class="slider__image" src="./img/01.png" alt="" />
+                  </picture>
+                  <figcaption class="slider__txt">
+                    Сайт психолога Веры Антоновой
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slider__item">
+                <figure class="slider__figure">
+                  <picture class="slider__picture">
+                    <source class="slider__image" srcset="./img/02.webp" type="image/png" />
+                    <img class="slider__image" src="./img/02.png" alt="" />
+                  </picture>
+                  <figcaption class="slider__txt">
+                    Сайт магазина детской одежды
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="slider__item">
+                <figure class="slider__figure">
+                  <picture class="slider__picture">
+                    <source class="slider__image" srcset="./img/03.webp" type="image/png" />
+                    <img class="slider__image" src="./img/03.png" alt="" />
+                  </picture>
+                  <figcaption class="slider__txt">
+                    Сайт магазина &laquo;Рыболов&raquo;
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <button class="slider__button slider__button--prev" aria-label="Предыдущий слайд"></button>
+          <button class="slider__button slider__button--next" aria-label="Следующий слайд"></button>
+          <div class="slider__pagination paginator" aria-hidden="true"></div>
+        </div>
+        <button class="sample__btn btn-active open-js" id="sample__btn" type="button">
+          Заказать проект
+        </button>
+      </div>
+    </section>
+    <section class="ability">
+      <div class="container ability__wrapper">
+        <div class="ability__elements elements elements--js" aria-hidden="true">
+          <span class="elements__item elements__item--grid"> # </span>
+          <span class="elements__item elements__item--brace"> { } </span>
+          <span class="elements__item elements__item--brace-copy"> { } </span>
+          <span class="elements__item elements__item--div">
+            &lt;div&gt;
+          </span>
+          <span class="elements__item elements__item--div-copy">
+            &lt;div&gt;
+          </span>
+          <span class="elements__item elements__item--slash">
+            &lt;/&gt;
+          </span>
+          <span class="elements__item elements__item--slash-copy">
+            &lt;/&gt;
+          </span>
+        </div>
+        <h2 class="ability__title" id="ability__title">
+          Адаптивная вёрстка под все устройства<br />и&nbsp;браузеры
+          от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+        </h2>
+        <p class="ability__txt">
+          * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
+          и&nbsp;рассчитываются индивидуально,<br />
+          в&nbsp;зависимости от&nbsp;сложности задач.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__top container">
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#part__title" title="Услуги">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#sample__title" title="Портфолио">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#ability__title" title="Стоимость">Стоимость</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="footer__contacts contacts">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__tel" href="tel:+74999957755"><i class="contacts__icon icon icon--phone"
+                aria-hidden="true"></i>&nbsp;+7 (499) 995-77-55</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__mail" href="mailto:dmitry@alekseev.com"><i class="contacts__icon icon icon--mail"
+                aria-hidden="true"></i>&nbsp;dmitry@alekseev.com</a>
+          </li>
+        </ul>
+      </address>
+      <div class="footer__wrapper">
+        <button class="footer__btn btn btn-call open-js" id="footer__btn" type="button">
+          Заказать звонок
+        </button>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link link link--vk" href="https://vk.com/skillbox_education" target="_blank"
+              aria-label="Мы вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link link link--fb" href="https://www.facebook.com/skillboxru/" target="_blank"
+              aria-label="Мы в фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link link link--twit" href="https://twitter.com/skillbox_ru" target="_blank"
+              aria-label="Мы в твитере"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link link link--inst" href="https://www.instagram.com/skillbox.ru/" target="_blank"
+              aria-label="Мы в инстаграм"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__bottom">&copy;&nbsp;Дмитрий Алексеев, 2016 – 2018</p>
+  </footer>
+  <div class="overlay overlay-js">
+    <div class="modal modal-js" id="modal" aria-hidden="true" role="dialog">
+      <div class="modal__content modal__content-js" role="document">
+        <form class="modal__form form form-js" name="modal__form" action="mailto:keysi88@yandex.ru" enctype="text/plain"
+          method="POST">
+          <h2 class="form__title h-2">Обратная связь</h2>
+          <label class="form__label" for="name">Представтесь пожалуйста:</label>
+          <p class="form__wrapper">
+            <input class="form__row row row--1 row-js" id="name" type="text" name="name" placeholder="Давид Ковидыч"
+              required />
+            <span class="warning">Введите имя отчество, например: Людмила Владимировна</span>
+          </p>
+          <label class="form__label" for="phone">Номер телефона:</label>
+          <p class="form__wrapper">
+            <input class="form__row row row--2 row-js" id="phone" type="text" name="phone"
+              placeholder="+7 777 777 77 77" required />
+            <span class="warning">Введите телефон, например: 8 333 333 33 33</span>
+          </p>
+          <label class="form__label" for="email">Email:</label>
+          <p class="form__wrapper">
+            <input class="form__row row row--3 row-js" id="email" type="text" name="email"
+              placeholder="_________@______.___" required />
+            <span class="warning">Введите email, например: koloboc@yandex.ru</span>
+          </p>
+          <button class="modal__btn modal__btn--enter" id="enter" type="button" disabled>
+            Отправить
+          </button>
+        </form>
+        <button class="modal__btn modal__btn--close" id="close" type="button" title="Закрыть модальное окно">
+          <svg class="modal__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <line x1="0" y1="0" x2="20" y2="20" stroke="#666d7e" stroke-width="3" />
+            <line x1="20" y1="0" x2="0" y2="20" stroke="#666d7e" stroke-width="3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <span class="closed closed-js">Благодарю!<br />Данные отправлены!</span>
+  </div>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>
